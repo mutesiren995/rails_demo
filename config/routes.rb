@@ -8,4 +8,6 @@ Rails.application.routes.draw do
 
   get "contact" => "static_pages#contact"
 
+  get "asian_persuasion" =>"pages#page1"
+
 end

@@ -1,0 +1,33 @@
+// Place all the styles related to the pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.asian-persuation{
+  height: 740px;
+  background: url(asset_path("asian_persuasion_practicing/section1.png")) no-repeat;
+  background-size: 100%;
+  position: relative;
+}
+// .section1{
+//   background: white;
+//   margin-top: 650px;
+//   margin-left: 75px;
+//   width: 83.3%;
+//   float: left;
+//   height: 36px;
+//   font-size: 25px;
+//   font-weight: 400;
+// }
+.asian-section1{
+  position: absolute !important;
+  background: white;
+  bottom: 70px;
+  left: 95px;
+  font-size: 24px;
+  .text1{
+    margin-left: 77px;
+  }
+}
+
+.float-left{
+  float: left;
+}
