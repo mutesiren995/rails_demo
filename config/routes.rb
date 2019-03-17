@@ -10,4 +10,8 @@ Rails.application.routes.draw do
 
   get "asian_persuasion" =>"pages#page1"
 
+  get  'signup', to: 'users#new'
+
+  resources :users
+
 end

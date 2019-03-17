@@ -42,3 +42,133 @@
    font-size: 19px;
   }
 }
+
+.section4{
+ background: url(asset_path("asian_persuasion_practicing/section3.png")) no-repeat;
+ height: 465px;
+ background-size: 100%;
+ position: relative;
+}
+
+.section5{
+  padding-left: 200px;
+  font-size: medium;
+  color: white;
+  padding-top: 20px;
+}
+
+.section5-first {
+  padding-top: 150px;
+}
+
+.section5-btn{
+  position: absolute;
+  left: 507px;
+  background: #f1eef5;
+  border-radius: 10px;
+  box-shadow: 8px 3px 26px #000000;
+  bottom: 66px;
+  width: 130px;
+  height: 50px;
+  &:hover{
+    background: red;
+    color: yellow;
+    width: 130px;
+    height: 50px;
+  }
+}
+
+.section6{
+  background: url(asset_path("asian_persuasion_practicing/section4.png")) no-repeat;
+  height: 465px;
+  background-size:100%
+}
+.section6-picture{
+  padding-top: 120px;
+  padding-left: 150px;
+  padding-right: 150px;
+}
+.section6-btn{
+  float: left;
+  margin-left: 507px;
+  margin-top: 50px;
+  box-shadow: 5px 5px 5px #555;
+  border-radius: 10px;
+  width: 130px;
+  height: 60px;
+  &:hover{
+    background: blue;
+    color: red;
+    width: 130px;
+    height: 60px;
+  }
+}
+
+.section7{
+  background: url(asset_path("asian_persuasion_practicing/section5.png")) no-repeat;
+  height: 465px;
+  background-size:100%
+}
+
+.section7-picture{
+  padding-top: 165px;
+  padding-left: 100px;
+  padding-right: 100px;
+  color: white;
+  font-size: medium;
+}
+
+.section7-btn{
+  margin-left: 507px;
+  margin-top: 50px;
+  border-radius: 9px;
+  width: 130px;
+  height: 60px;
+  background:grey;
+  &:hover{
+    background: yellow;
+    color: pink;
+    width: 130px;
+    height: 60px;
+  }
+}
+
+.picture{
+  h3{
+    text-align: center;
+    text-decoration: underline;
+  }
+  .asian-picture{
+    width: 100%;
+  }
+  .section8-txt{
+    text-align: center;
+  }
+}
+.section8-btn{
+  margin-left: 509px;
+  margin-top: 40px;
+  border-radius: 9px;
+  width: 130px;
+  height: 60px;
+  &:hover{
+    background: grey;
+    color: red;
+    width: 130px;
+    height: 60px;
+ }
+}
+.section9{
+  background: gray;
+  height: 300px;
+  margin-top: 50px;
+  .section9-picture{
+    margin-top: 65px;
+  }
+  h3, p{
+    color: white;
+  }
+  .text1{
+    margin-top: 50px;
+  }
+}
