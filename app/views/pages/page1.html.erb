@@ -53,7 +53,7 @@
       Don't believe us? Then come and hear from these incredible brands!
     </h1>
   </div>
-</div>
+
 
   <div class="section4">
     <p class="section5-first section5">
@@ -153,7 +153,7 @@
       </p>
     </div>
 
-    <button class="section8-btn">
+    <button class="section8-btn" data-toggle="modal" data-target="#myModal">
       REGISTER NOW
     </button>
   </div>
@@ -169,5 +169,53 @@
       </P>
       <p>Glen is the General Manager for SmartLabEnergy and owner of both Solaris Pty Ltd & SolarQuip.</p>
     </div>
-
   </div>
+
+  <div class="section10">
+    <div class="col-sm-8 text1">
+      <h3 class="title">Anthony Buckwell</h3>
+      <p>
+        Anthony has spent over 20 years engineering in true leading edge technologies. Firstly on the first 3G mobile telecommunications networks and then the last 10 years in the Renewable Energy sector.
+      </p>
+      <p>
+        Holding a Bachelor of Engineering in Microelectronics (Comms), full CEC Design and Installation accreditation for on grid and Standalone Power Systems as well as a Electrical Mechanics license.
+      </p>
+      <p>
+        Anthony has been the Technical Development Manager for One Stop Warehouse these last 3 years.
+      </p>
+    </div>
+    <div class="col-sm-3 col-sm-offset-1 picture">
+      <%= image_tag("asian_persuasion_practicing/anthony_buckwell.png")%>
+    </div>
+  </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+          </div>
+          <div class="modal-body">
+            <div class="section11" style="width:200px;height:200px;text-align:center;margin: auto;">
+              <div class="rua!">
+                <%= form_tag "/signup_event" %>
+                  <%= label_tag("name") %> <br>
+                  <%= text_field_tag(:name) %><br>
+                  <%= label_tag("phone") %><br>
+                  <%= text_field_tag(:phone) %><br>
+                  <br>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            <%= submit_tag "Sign up!", id: "xxxx",  class:"btn btn-primary", style:"width: 200px;float:right;margin-left:15px;" %>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+</div>

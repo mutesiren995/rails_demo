@@ -16,3 +16,29 @@
 //= require bootstrap-sprockets
 //= require turbolinks
 //= require_tree .
+
+$(function(){
+  $(document).on("click", "#xxxx", function(){
+    var name_value = $("#name").val();
+    var phone_value = $("#phone").val();
+
+    $.ajax({
+      url: '/signup_event',
+      type: 'POST',
+      dataType: "json",
+      data: {
+        'name': name_value,
+        'phone': phone_value
+      },
+      success: function(response){
+        if(response.success){
+          alert(response.msg)
+        }else{
+          alert(response.msg)
+        }
+      }
+    })
+
+    return false;
+  })
+})

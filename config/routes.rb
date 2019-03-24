@@ -12,6 +12,8 @@ Rails.application.routes.draw do
 
   get  'signup', to: 'users#new'
 
+  post  'signup_event', to:'events#create'
+
   resources :users
 
 end
