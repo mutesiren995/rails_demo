@@ -31,8 +31,10 @@ $(function(){
         'phone': phone_value
       },
       success: function(response){
-        if(response.success){
-          alert(response.msg)
+        console.log(response.success)
+        if(response.success===true){
+          alert(response.msg);
+          $('#eventModal').modal('hide')
         }else{
           alert(response.msg)
         }
@@ -40,5 +42,5 @@ $(function(){
     })
 
     return false;
-  })
+  });
 })
