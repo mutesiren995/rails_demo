@@ -16,6 +16,8 @@
 //= require bootstrap-sprockets
 //= require turbolinks
 //= require_tree .
+//= require EasyAutocomplete-1.3.5/jquery.easy-autocomplete.min.js
+
 
 $(function(){
   $(document).on("click", "#xxxx", function(){

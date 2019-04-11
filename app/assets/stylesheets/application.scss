@@ -12,7 +12,12 @@
  *
  *= require_tree .
  *= require_self
+ *= require EasyAutocomplete-1.3.5/easy-autocomplete.min.css
  */
 
 @import "bootstrap-sprockets";
 @import "bootstrap";
+
+.white{
+  margin-top: 8px;
+}

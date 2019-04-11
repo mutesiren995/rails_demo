@@ -1,13 +1,16 @@
 class SessionsController < ApplicationController
+
   def new
   end
 
   def create
     user = User.find_by(:email => sessions_params[:email])
     if user && user.authenticate(sessions_params[:password])
-      puts "**** YES ****"
+      # view_context.help_methods
+      log_in user
+      redirect_to user_path user
     else
-      puts "***** PASSWORD WRONG ******"
+      render :new
     end
   end
 
