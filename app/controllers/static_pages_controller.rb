@@ -10,4 +10,15 @@ class StaticPagesController < ApplicationController
 
   def contact
   end
+
+  def search
+    respond_to do |format|
+      format.json {
+        # render json:User.all.map{|x| x.name}
+        # render json: User.where("name like ?","%#{params[:q]}%").map{|x| x.name}
+        render json: User.where("name like ?","%#{params[:q]}%").map{|x| {name: x.name,id: x.id}}
+      }
+    end
+  end
+
 end

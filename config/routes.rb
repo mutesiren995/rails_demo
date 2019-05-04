@@ -18,4 +18,6 @@ Rails.application.routes.draw do
 
   resources :sessions, only: [:new,:create,:destroy]
 
+  get "home_search", to:"static_pages#search"
+
 end

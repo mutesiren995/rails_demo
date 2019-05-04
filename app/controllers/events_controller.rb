@@ -9,7 +9,7 @@ class EventsController <  ApplicationController
     end
     respond_to do |format|
       format.json {
-        render json: {msg: a, success: ok }
+        render json: {msg: a, success: ok, data: [ {"name": "Afghanistan", "code": "AF"}, {"name": "Albania", "code": "AL"}] }
       }
     end
   end
