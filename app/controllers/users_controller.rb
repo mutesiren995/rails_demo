@@ -9,6 +9,7 @@ class UsersController < ApplicationController
     if @user.save
       # binding.pry
       session[:user_id] = @user.id
+      flash[:success]="Successfully Signed up"
       redirect_to user_path(@user.id)
       # redirect_to @user
     else

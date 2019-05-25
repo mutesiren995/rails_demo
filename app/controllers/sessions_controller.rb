@@ -8,8 +8,10 @@ class SessionsController < ApplicationController
     if user && user.authenticate(sessions_params[:password])
       # view_context.help_methods
       log_in user
+      flash[:success]="Successfully Log In"
       redirect_to user_path user
     else
+      flash[:danger]="Failed Log In"
       render :new
     end
   end

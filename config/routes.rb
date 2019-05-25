@@ -8,6 +8,8 @@ Rails.application.routes.draw do
 
   get "contact" => "static_pages#contact"
 
+  get "games" => "static_pages#games"
+
   get "asian_persuasion" =>"pages#page1"
 
   get  'signup', to: 'users#new'

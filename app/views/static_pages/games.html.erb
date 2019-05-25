@@ -1,0 +1,42 @@
+<div id="game_table">
+  <div id="desk">
+    <div id="cards">
+      <div class="card">
+        <div class="face front"></div>
+        <div class="face back"></div>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+  $(function(){
+    // console.log(index)
+    var game={};
+    game.matchingGames={};
+    game.matchingGames.cardWidth=80;
+    game.matchingGames.cardHeight=120;
+    game.matchingGames.deck=[
+        "cardAK","cardAK",
+        "cardAQ","cardAQ",
+        "cardAJ","cardAJ",
+        "cardBK","cardBK",
+        "cardBQ","cardBQ",
+        "cardBJ","cardBJ"
+    ];
+
+    var card=$(".card");
+    for (var i=0;i<11;i++){
+      card.clone().appendTo("#cards");
+    }
+
+    $(".card").each(function(index){
+      // console.log(index)
+      $(this).find(".back").addClass(game.matchingGames.deck[index])
+      $(this).css({
+        "left":(game.matchingGames.cardWidth+50)*(index%4)+"px",
+        "top":(game.matchingGames.cardHeight+60)*Math.floor(index/4)+"px"
+        // console.log(game.matchingGames.cardWidth)*(index%4));
+      })
+    });
+  });
+</script>
