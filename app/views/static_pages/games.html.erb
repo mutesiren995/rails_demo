@@ -28,7 +28,7 @@
     for (var i=0;i<11;i++){
       card.clone().appendTo("#cards");
     }
-
+    game.matchingGames.deck.sort(function(){ return 0.5 - Math.random() })
     $(".card").each(function(index){
       // console.log(index)
       $(this).find(".back").addClass(game.matchingGames.deck[index])
@@ -37,6 +37,10 @@
         "top":(game.matchingGames.cardHeight+60)*Math.floor(index/4)+"px"
         // console.log(game.matchingGames.cardWidth)*(index%4));
       })
+    });
+    $(".card").on('click', function(){
+      $(this).find(".front").css("z-index", 1)
+      $(this).find(".back").css("z-index", 2);
     });
   });
 </script>

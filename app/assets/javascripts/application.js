@@ -18,6 +18,9 @@
 //= require turbolinks
 //= require_tree .
 //= require EasyAutocomplete-1.3.5/jquery.easy-autocomplete.min.js
+//= require jquery-ui
+//= require jquery-tablesorter
+
 
 
 $(function(){

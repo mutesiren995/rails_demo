@@ -29,10 +29,10 @@ gem 'jbuilder', '~> 2.5'
 # gem 'redis', '~> 4.0'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
-
+gem 'jquery-ui-rails', '~> 6.0', '>= 6.0.1'
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
-
+gem 'jquery-tablesorter', '~> 1.26', '>= 1.26.1'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 gem 'bootstrap-sass', '~> 3.4.0'
