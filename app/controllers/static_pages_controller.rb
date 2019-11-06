@@ -17,6 +17,7 @@ class StaticPagesController < ApplicationController
         # render json:User.all.map{|x| x.name}
         # render json: User.where("name like ?","%#{params[:q]}%").map{|x| x.name}
         render json: User.where("name like ?","%#{params[:q]}%").map{|x| {name: x.name,id: x.id}}
+        # binding.pry
       }
     end
   end

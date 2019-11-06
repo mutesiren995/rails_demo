@@ -3,7 +3,7 @@
     <%= link_to "sample app", '#', id: "logo" %>
     <nav>
       <ul class="nav navbar-nav navbar-right">
-        <li><input type="text" placeholder="搜索"class="form-control white"></li>
+        <li><input type="text" placeholder="搜索"class="form-control white" id="input_search"></li>
         <li><%= link_to "Home",   root_path %></li>
         <li><%= link_to "Help",   help_path %></li>
         <li>
@@ -17,7 +17,9 @@
               <%= link_to current_user.name, user_path(current_user.id) %>
             </li>
             <li role="separator" class="divider"></li>
-            <li><a href="#">Separated link</a></li>
+            <li>
+              <%= link_to "logout",logout_path, method: :delete %>
+            </li>
           </ul>
           <% else %>
             <%=  link_to "Log in", new_session_path %>

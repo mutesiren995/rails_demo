@@ -42,7 +42,7 @@ $(function(){
           alert(response.msg);
           $('#eventModal').modal('hide')
         }else{
-          alert(response.msg)
+          alert('更新失败')
         }
       }
     })
@@ -50,7 +50,7 @@ $(function(){
     return false;
   });
 
-  // $("#input_search").on('input propertychange', function(){
+  // $("#input_search").on('input', function(){
   //   var text=$("#input_search").val();
   //   alert(text);
   //   $.ajax({

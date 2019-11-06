@@ -10,9 +10,11 @@ Rails.application.routes.draw do
 
   get "games" => "static_pages#games"
 
-  get "asian_persuasion" =>"pages#page1"
+  get "pratice_page" =>"pages#page1"
 
   get  'signup', to: 'users#new'
+
+  delete 'logout', to: 'sessions#destroy'
 
   post  'signup_event', to:'events#create'
 
